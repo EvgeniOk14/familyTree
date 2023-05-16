@@ -1,5 +1,6 @@
 package projectFamilyTree.model.FamilyTree.AddIntoTree;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,12 +8,11 @@ import java.util.List;
 import projectFamilyTree.model.Persons.Gender;
 import projectFamilyTree.model.Persons.Human;
 
-public class FillHuman<T extends Human> 
+public class FillHuman<Person extends Human>
 {
-  private List<Human> list = new ArrayList<>();
+  private List<Person> list = new ArrayList<>();
 
-    public List<Human> fillByHuman()
-    {
+    public List<Person> fillByHuman() throws IOException, ClassNotFoundException {
         Human human1= new Human(1, "Иванов","Владмир",
                                 Gender.Male, LocalDate.of(1925, 10, 04),
                                 LocalDate.of(1987, 04, 01), null,
@@ -63,8 +63,9 @@ public class FillHuman<T extends Human>
         Human human14 = new Human(14,"Петров","Кирилл",
                                 Gender.Male,LocalDate.of(1983, 11, 20),
                                 null, human10,human12,null);
-        
-        List<Human> listOfHuman = new ArrayList<>(Arrays.asList(human1, human2, human3,
+//        Human human15 = new Human();
+//        human15.createHuman();
+        List<Person> listOfHuman = (List<Person>) new ArrayList<>(Arrays.asList(human1, human2, human3,
                                                                 human4, human5, human6,
                                                                 human7, human8, human9,
                                                                 human10, human11, human12,

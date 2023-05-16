@@ -9,7 +9,7 @@ public class HumanIterator<T> implements Iterator<T>
     private int index;
     private List<T> familyTree;
 
-    public HumanIterator(ArrayList<T> familyTree)
+    public HumanIterator(List<T> familyTree)
     {
         this.familyTree = familyTree;
     }

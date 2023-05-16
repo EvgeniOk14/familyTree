@@ -3,14 +3,16 @@ package projectFamilyTree.model.FamilyTree;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
+
 import projectFamilyTree.model.Comparator.IdComparator;
 import projectFamilyTree.model.Iterator.HumanIterator;
 import projectFamilyTree.model.Persons.Person;
 
 public class FamilyTree<T extends Person> implements Serializable, Iterable<T>
 {  
-    private ArrayList t;
-    private ArrayList<T> familyTree = new ArrayList<>();
+    private List<T> t;
+    private List<T> familyTree = new ArrayList<>();
     
     @Override
     public String toString() 
@@ -50,7 +52,11 @@ public class FamilyTree<T extends Person> implements Serializable, Iterable<T>
             return getFirstName();
         }
 
-    public void sort(IdComparator idComparator) 
+
+
+
+    public List<Person> sort(IdComparator idComparator)
     {
+        return (List<Person>) t;
     }
 }

@@ -1,21 +1,25 @@
 package projectFamilyTree.model.Persons;
 
+import projectFamilyTree.model.Iterator.HumanIterator;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 
-public abstract class Person implements InterfacePerson
+
+public abstract class Person implements InterfacePerson, Comparable<Person>
 {
-    private int id;
-    private Person father;
-    private Person mother;
-    private Gender gender;
-    private String firstName;
-    private String lastName;
-    private LocalDate dataBirth;
-    private LocalDate dataDeath;
-    private ArrayList<Person> children;
-    
+    public int id;
+    public Person father;
+    public Person mother;
+    public Gender gender;
+    public String firstName;
+    public String lastName;
+    public LocalDate dataBirth;
+    public LocalDate dataDeath;
+    public ArrayList<Person> children;
+
+
 
 
     public Person(int id, String lastName, String firstName, Gender gender,
@@ -32,13 +36,74 @@ public abstract class Person implements InterfacePerson
         this.children = children;
         this.dataBirth = dataBirth;
         this.dataDeath = dataDeath;
-    }    
-    
-    public Person()
+    }
+//
+//    public Person();
+
+    public Person(int id, String lastName, String firstName,Gender gender,
+                 LocalDate dataBirth, LocalDate dataDeath,
+                 Person father, Person mother)
     {
+        this(id, lastName, firstName, gender, dataBirth, dataDeath,
+                father, mother,null);
+
     }
 
-    public void setId(int id) {
+    public Person(int id, String lastName, String firstName,Gender gender,
+                 LocalDate dataBirth, LocalDate dataDeath, Person father)
+    {
+        this(id, lastName, firstName, gender, dataBirth, dataDeath,
+                father, null, null);
+    }
+
+    public Person(int id, String lastName, String firstName,
+                 Gender gender, LocalDate dataBirth, LocalDate dataDeath)
+    {
+        this(id, lastName, firstName, gender, dataBirth,
+                null, null, null,null);
+    }
+
+    public Person(int id, String lastName, String firstName, Gender gender,
+                 LocalDate dataBirth)
+    {
+        this(id, lastName, firstName, gender, dataBirth,
+                null, null, null, null);
+    }
+
+    public Person(int id, String lastName, String firstName, Gender gender)
+    {
+        this(id, lastName, firstName, gender, null,
+                null, null, null, null);
+    }
+
+    public Person(int id, String lastName, String firstName)
+    {
+        this(id, lastName, firstName, null, null,
+                null, null, null,null);
+    }
+
+    public Person(int id, String lastName)
+    {
+        this(id, lastName, null, null, null,
+                null, null,null, null);
+    }
+
+    public Person(int id)
+    {
+        this(id, null, null, null, null,
+                null, null,null, null);
+    }
+
+    public Person()
+    {
+        this(0, null, null, null, null,
+                null, null, null, null);
+    }
+
+
+
+    public void setId(int id)
+    {
         this.id = id;
     }
     public int getId() {
@@ -105,33 +170,39 @@ public abstract class Person implements InterfacePerson
     public LocalDate getDataDeath() {
         return dataDeath;
     }
-    
+
     public void setChildren(ArrayList<Person> children) 
     {
         this.children = children;
     }
-    public ArrayList<Person> getChildren()
-    {
-        return children;
-    }
+        public ArrayList<Person> getChildren()
+        {
+            return children;
+        }
 
-    public void addChildren(Person person)
-    {
+
+        public void addChildren(Person person)
+        {
         if(this.children == null)
         {
-            this.children = new ArrayList<>();    
+            this.children = new ArrayList<>();
         }
         this.children.add(person);
-    }
+        }
 
-    public int getAge() 
-    {
+        public int getAge()
+        {
+
         LocalDate currenDate = LocalDate.now();
         if (getDataDeath() == null)
             return Period.between(dataBirth, currenDate).getYears();
         else
             return Period.between(dataBirth, dataDeath).getYears();
-    }
+        }
 
-    
+    @Override
+    public int compareTo(Person o)
+    {
+        return Integer.compare(this.id, o.id);
+    }
 }

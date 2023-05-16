@@ -1,7 +1,10 @@
 package projectFamilyTree;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 
+import projectFamilyTree.model.Persons.Person;
 import projectFamilyTree.model.Service;
 import projectFamilyTree.model.Comparator.SortByLastName;
 import projectFamilyTree.model.FamilyTree.FamilyTree;
@@ -20,8 +23,9 @@ import projectFamilyTree.view.View;
 
 public class Main
 {
-    public static void main(String[] args) throws ClassNotFoundException, IOException
-    {
+    public static void main(String[] args) throws ClassNotFoundException, IOException {
+
+
 
         View view = new Console();
 
@@ -42,6 +46,7 @@ public class Main
                 findHuman, addPerson);
 
         Presenter presenter = new Presenter(view, service);
+
 
         view.StartProgram();
     }

@@ -11,7 +11,8 @@ public class NameComparator<T extends Person> implements Comparator<T>
         {
             if (member1 instanceof Human && member2 instanceof Human)
             {
-                return member1.getLastName().compareTo(member2.getLastName());
+                return member1.getLastName().compareTo(member2.getLastName()) &
+                         member1.getFirstName().compareTo((member2.getFirstName()));
             }
         return 1;
         }

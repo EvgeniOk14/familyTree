@@ -1,10 +1,13 @@
 package projectFamilyTree.view.Starts;
+import org.w3c.dom.ls.LSOutput;
 import projectFamilyTree.view.View;
 import projectFamilyTree.model.Persons.Person;
 import projectFamilyTree.presenter.Presenter;
 import projectFamilyTree.model.FamilyTree.FamilyTree;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Console<T extends Person, E extends FamilyTree> implements View<T, E>
@@ -12,6 +15,8 @@ public class Console<T extends Person, E extends FamilyTree> implements View<T, 
     static Scanner scanner;
     private Presenter presenter;
     private static boolean work = true;
+
+
 
         public Scanner console()
         {
@@ -49,6 +54,7 @@ public class Console<T extends Person, E extends FamilyTree> implements View<T, 
                     break;
            
                 case 4:
+
                     ConsoleSortById(); // сортировка дерева по id
                     break;
 
@@ -205,24 +211,30 @@ public class Console<T extends Person, E extends FamilyTree> implements View<T, 
     
     /*методы консоли связанные с презентерем:  */
 
-    public void ConsoleTreeFillsByPersons() // заполнения дерева людьми (Human)
+    public void ConsoleTreeFillsByPersons() throws IOException, ClassNotFoundException // заполнения дерева людьми (Human)
     {
         presenter.PresenterTreeFillsByPersons();
     }
 
-    public void ConsoleFindPerson() // поиск персоны в дереве по имени и фамилии
+    public void ConsoleFindPerson() throws IOException, ClassNotFoundException // поиск персоны в дереве по имени и фамилии
     {
         presenter.PresenterFindPerson();
     }
 
-    public void ConsoleSortById() // сортировка дерева по id
+    public void ConsoleSortById() throws IOException, ClassNotFoundException // сортировка дерева по id
     {
-        presenter.PresenterSortById();
+
+        List<Person> listPerson = new ArrayList<>();
+        listPerson = presenter.PresenterSortById();
+        System.out.println(listPerson);
     }
 
-    public void ConsoleSortLastName() // сортировка дерева по имени
+    public void ConsoleSortLastName() throws IOException, ClassNotFoundException // сортировка дерева по имени
     {
-        presenter.PresenterSortByName();
+        List<Person> listPerson1 = new ArrayList<>();
+        listPerson1 = presenter.PresenterSortByName();
+        System.out.println(listPerson1);
+//        presenter.PresenterSortByName();
     }
 
     // методы для записи дерева:

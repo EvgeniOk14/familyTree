@@ -24,6 +24,7 @@ public class Presenter<T>
     private Service service;
 
 
+
     public Presenter(View view, Service service)
     {
         this.view = view;
@@ -32,7 +33,7 @@ public class Presenter<T>
 
     }
 
-    public void PresenterTreeFillsByPersons() // добавление людей в дерево и вывод дерева на экран
+    public void PresenterTreeFillsByPersons() throws IOException, ClassNotFoundException // добавление людей в дерево и вывод дерева на экран
     {
         view.printPersons(service.addHuman(), 1);
         
@@ -40,21 +41,21 @@ public class Presenter<T>
         
     }
 
-    public void PresenterFindPerson() // нахождение персоны по имени и фамилии
+    public void PresenterFindPerson() throws IOException, ClassNotFoundException // нахождение персоны по имени и фамилии
     {
         service.FindHuman();
     }
 
-    public void PresenterSortById() // сортировка дерева id
+    public List<Person> PresenterSortById() throws IOException, ClassNotFoundException // сортировка дерева id
     {
-        // service.SortId();
-        service.SortById();
+       return service.serviceSortById();
     }
 
-    public void PresenterSortByName() // сортировка дерева по имени 
+    public List<Person> PresenterSortByName() throws IOException, ClassNotFoundException // сортировка дерева по имени
     {
-        service.SortByLastName();
+        return service.SortByLastName();
     }
+
     // методы для записи в файл:
 
     public void PresenterSaveBinFormat() throws IOException, ClassNotFoundException
@@ -98,6 +99,7 @@ public class Presenter<T>
     {
         service.ReadMd(); // чтение дерева из Md файлала
     }
+
 
 }
     

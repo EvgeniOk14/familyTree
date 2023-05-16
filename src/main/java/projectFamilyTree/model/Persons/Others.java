@@ -5,13 +5,12 @@ import java.io.Serializable;
 public class Others extends Person implements Serializable, InterfaceOthers
 
 {
-    private int id;
     private String Name;
     private String Occupation;
 
     public Others(int id, String Name, String Occupation)
     {
-        this.id = id;
+        super.id = id;
         this.Name = Name;
         this.Occupation = Occupation;  
     }    
@@ -31,21 +30,29 @@ public class Others extends Person implements Serializable, InterfaceOthers
         this(0,  null, null);
     }
     
-    public int getId() 
-    {
-        return id;
-    }
+
 
     public String getName() 
     {
         return Name;
     }
+    public void setName(String name)
+    {
+       this.Name = name;
 
-    public String getOccupation() 
+    }
+
+    public String getOccupation()
     {
         return Occupation;
     }
-    
+    public void setOccupation(String occupation)
+    {
+        this.Occupation = occupation;
+
+    }
+
+
     @Override
     public String toString() 
     {
@@ -54,6 +61,11 @@ public class Others extends Person implements Serializable, InterfaceOthers
         return sb.toString();
     }
 
+
+    @Override
+    public int compareTo(Person o) {
+        return 0;
+    }
 }
 
 

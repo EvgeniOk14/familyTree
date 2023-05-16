@@ -1,18 +1,22 @@
 package projectFamilyTree.model.Comparator;
 
-import projectFamilyTree.model.FamilyTree.FamilyTree;
+import projectFamilyTree.model.FamilyTree.AddIntoTree.FillHuman;
+import projectFamilyTree.model.Persons.Person;
 
-public class SortById 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class SortById
 {
-    private FamilyTree familyTree;
 
-   public void SortById(FamilyTree familyTree)
+    public List<Person> sortBy() throws IOException, ClassNotFoundException
     {
-        this.familyTree = familyTree;
+        FillHuman fh = new FillHuman();
+        List<Person> listPerson = new ArrayList<>();
+        listPerson = fh.fillByHuman();
+        listPerson.sort(new IdComparator());
+        return listPerson;
     }
 
-    public void sortBy(FamilyTree familyTree)
-    {
-        familyTree.sort(new IdComparator());
-    }
 }

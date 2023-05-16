@@ -1,7 +1,6 @@
 package projectFamilyTree.model;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import projectFamilyTree.model.Comparator.IdComparator;
@@ -60,6 +59,7 @@ public class Service<T extends Person>
         SortById sortById, SortByLastName sortByLastName,
          FindHuman findHuman, AddPerson addPerson)
     {
+        this.findHuman = findHuman;
         this.fillHuman = fillHuman;
         this.fillOthers = fillOthers;
         this.familyTree = familyTree;
@@ -72,13 +72,13 @@ public class Service<T extends Person>
         this.saveMdFormat = saveMdFormat;
     }
 
-        public void addPerson() // добавление персон в список дерева
+        public void addPerson() throws IOException, ClassNotFoundException // добавление персон в список дерева
         {
             System.out.println("Печать дерева с Human: " 
             + addPerson.addPerson(fillHuman.fillByHuman()));
         }
 
-        public FamilyTree addHuman() // добавление в дерево людей и вывод на экран
+        public FamilyTree addHuman() throws IOException, ClassNotFoundException // добавление в дерево людей и вывод на экран
         {
             // System.out.println("Печать дерева с Human: "
             //  + addPerson.addPerson(fillHuman.fillByHuman()));
@@ -92,7 +92,7 @@ public class Service<T extends Person>
             return addPerson.addPerson(fillOthers.fillOthers());
         }
 
-        public void FindHuman() // поиск людей в дереве по имени и фамилии
+        public void FindHuman() throws IOException, ClassNotFoundException // поиск людей в дереве по имени и фамилии
         {
             findHuman.findHuman();
         }
@@ -154,24 +154,19 @@ public class Service<T extends Person>
             nameComparator.compare(person, person);
         }
         
-        public void SortById() // сортировка по id
+        public List<Person> serviceSortById() throws IOException, ClassNotFoundException // сортировка по id
         {
-            FamilyTree familyTree1 = new FamilyTree();
-            AddPerson addPerson = new AddPerson();
-            FillHuman fillHuman = new FillHuman();
-            familyTree1 = addPerson.addPerson(fillHuman.fillByHuman());
-            sortById.sortBy(familyTree1); // передаём заполненное дерево и сортируем по убыванию id
-            System.out.println("Список, отсортированный по id: " + familyTree1);
+            SortById si = new SortById();
+            return si.sortBy();
+//            System.out.println("Список, отсортированный по id: " + si.sortBy(listPerson));
         }
 
-        public void SortByLastName() // сортировка по имени
+        public List<Person> SortByLastName() throws IOException, ClassNotFoundException // сортировка по имени
         {
-            FamilyTree familyTree2 = new FamilyTree();
-            AddPerson addPerson = new AddPerson();
-            FillHuman fillHuman = new FillHuman();
-            familyTree2 = addPerson.addPerson(fillHuman.fillByHuman());
-            sortByLastName.sortByLastName(familyTree2);
-            System.out.println("Список, отсортированный по имени: " + familyTree2);
+            SortByLastName sn = new SortByLastName();
+            return sn.sortByLastName();
+
         }
+
 
 }
