@@ -94,7 +94,8 @@ public class Service<T extends Person>
 
         public void FindHuman() throws IOException, ClassNotFoundException // поиск людей в дереве по имени и фамилии
         {
-            findHuman.findHuman();
+            FindHuman fd = new FindHuman();
+            fd.findHuman();
         }
 
         public  void SaveBinFormat() throws IOException, ClassNotFoundException
