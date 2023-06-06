@@ -9,7 +9,8 @@ import projectFamilyTree.model.Comparator.IdComparator;
 import projectFamilyTree.model.Iterator.HumanIterator;
 import projectFamilyTree.model.Persons.Person;
 
-public class FamilyTree<T extends Person> implements Serializable, Iterable<T> {
+public class FamilyTree<T extends Person> implements Serializable, Iterable<T>
+{
     private List<T> t;
     private List<T> familyTree = new ArrayList<>();
 
@@ -48,8 +49,4 @@ public class FamilyTree<T extends Person> implements Serializable, Iterable<T> {
 
 }
 
-//    public List<Person> sort(IdComparator idComparator)
-//    {
-//        return (List<Person>) t;
-//    }
-//}
+

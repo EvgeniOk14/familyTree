@@ -35,6 +35,7 @@ public class Console<T extends Person, E extends FamilyTree> implements View<T, 
     @Override
     public void StartProgram() throws ClassNotFoundException, IOException 
     {
+        System.out.print("\033[H\033[J");// ru.stackoverflow.com/questions/1315049/Как-очистить-консоль-в-java-во-время-действия-программы
         while (work) 
             {
                 interfaceStart interfaceStart = new Start0();
@@ -74,6 +75,7 @@ public class Console<T extends Person, E extends FamilyTree> implements View<T, 
 
     public void SecondStartProgram() throws ClassNotFoundException, IOException
     {
+        System.out.print("\033[H\033[J");// ru.stackoverflow.com/questions/1315049/Как-очистить-консоль-в-java-во-время-действия-программы
         while(work)
         {
     interfaceStart interfaceStart = new Start1(); // второе меню
@@ -119,6 +121,7 @@ public class Console<T extends Person, E extends FamilyTree> implements View<T, 
 
     public void ThirdStartProgram() throws ClassNotFoundException, IOException
     {
+        System.out.print("\033[H\033[J");// ru.stackoverflow.com/questions/1315049/Как-очистить-консоль-в-java-во-время-действия-программы
         while(work)
         {
             interfaceStart interfaceStart = new Start2(); // третье меню
