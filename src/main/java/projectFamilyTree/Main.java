@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+import projectFamilyTree.model.FamilyTree.FindOthers;
 import projectFamilyTree.model.Persons.Person;
 import projectFamilyTree.model.Service;
 import projectFamilyTree.model.Comparator.SortByLastName;
 import projectFamilyTree.model.FamilyTree.FamilyTree;
 import projectFamilyTree.model.FamilyTree.FindHuman;
+import projectFamilyTree.model.FamilyTree.FindOthers;
 import projectFamilyTree.model.FamilyTree.AddIntoTree.AddPerson;
 import projectFamilyTree.model.FamilyTree.AddIntoTree.FillHuman;
 import projectFamilyTree.model.FamilyTree.AddIntoTree.FillOthers;
@@ -38,10 +40,11 @@ public class Main
         SaveMdFormat saveMdFormat = new SaveMdFormat();
         SortByLastName sortByLastName = new SortByLastName();
         FindHuman findHuman = new FindHuman();
+        FindOthers findOthers = new FindOthers();
         AddPerson addPerson = new AddPerson();
         SortById sortById = new SortById();
 
-        Service service = new Service(familyTree, fillHuman, fillOthers, saveBinFormat,
+        Service service = new Service(familyTree, fillHuman, fillOthers, findOthers, saveBinFormat,
                 saveTextFormat, saveDocFormat, saveMdFormat, sortById, sortByLastName,
                 findHuman, addPerson);
 

@@ -53,16 +53,20 @@ public class Console<T extends Person, E extends FamilyTree> implements View<T, 
                 case 3:
                     ConsoleFindPerson(); // поиск человека в дереве по имени и фамилии
                     break;
-           
+
                 case 4:
+                    ConsoleFindOthers(); // поиск others в дереве по имени и должности
+                    break;
+           
+                case 5:
 
                     ConsoleSortById(); // сортировка дерева по id
                     break;
 
-                case 5:
+                case 6:
                     ConsoleSortLastName(); // сортировка дерева по имени
                     break;
-                case 6:
+                case 7:
                     exit(); // выход из программы
                     break;
 
@@ -222,6 +226,11 @@ public class Console<T extends Person, E extends FamilyTree> implements View<T, 
     public void ConsoleFindPerson() throws IOException, ClassNotFoundException // поиск персоны в дереве по имени и фамилии
     {
         presenter.PresenterFindPerson();
+    }
+
+    public void ConsoleFindOthers() throws IOException, ClassNotFoundException // поиск Others в дереве
+    {
+       presenter.PresenterFindOthers();
     }
 
     public void ConsoleSortById() throws IOException, ClassNotFoundException // сортировка дерева по id

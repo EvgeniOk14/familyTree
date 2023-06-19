@@ -45,6 +45,10 @@ public class Presenter<T>
     {
         service.FindHuman();
     }
+    public void  PresenterFindOthers() throws IOException, ClassNotFoundException // поиск Others  в дереве
+    {
+        service.FindOthers();
+    }
 
     public List<Person> PresenterSortById() throws IOException, ClassNotFoundException // сортировка дерева id
     {

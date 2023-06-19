@@ -13,7 +13,7 @@ public class Start0 implements interfaceStart
         interfacetablo.tablo();
             int choice = ReadNumber.readNumberConsole();
 
-                while(choice < 1 || choice > 6)
+                while(choice < 1 || choice > 7)
               {
                 System.out.println("Вы ввели не верный номер операции!\n Введите его снова!");
                   interfacetablo.tablo();

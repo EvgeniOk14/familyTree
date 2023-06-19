@@ -9,6 +9,7 @@ import projectFamilyTree.model.Comparator.SortByLastName;
 import projectFamilyTree.model.Comparator.SortById;
 import projectFamilyTree.model.FamilyTree.FamilyTree;
 import projectFamilyTree.model.FamilyTree.FindHuman;
+import projectFamilyTree.model.FamilyTree.FindOthers;
 import projectFamilyTree.model.FamilyTree.AddIntoTree.AddPerson;
 import projectFamilyTree.model.FamilyTree.AddIntoTree.FillHuman;
 import projectFamilyTree.model.FamilyTree.AddIntoTree.FillOthers;
@@ -37,6 +38,7 @@ public class Service<T extends Person>
     private Human human;
     private Others others;
     private FindHuman findHuman;
+    private FindOthers findOthers;
     private AddPerson addPerson;
     private NameComparator nameComparator;
     private SortById sortById;
@@ -54,12 +56,14 @@ public class Service<T extends Person>
 
 
     public Service(FamilyTree familyTree, FillHuman fillHuman, FillOthers fillOthers,
+        FindOthers findOthers,
         SaveBinFormat saveBinFormat, SaveTextFormat saveTextFormat,
         SaveDocFormat saveDocFormat,SaveMdFormat saveMdFormat,
         SortById sortById, SortByLastName sortByLastName,
          FindHuman findHuman, AddPerson addPerson)
     {
         this.findHuman = findHuman;
+        this.findOthers = findOthers;
         this.fillHuman = fillHuman;
         this.fillOthers = fillOthers;
         this.familyTree = familyTree;
@@ -96,6 +100,11 @@ public class Service<T extends Person>
         {
             FindHuman fd = new FindHuman();
             fd.findHuman();
+        }
+        public void FindOthers() throws IOException, ClassNotFoundException //поиск Others в дереве
+        {
+            FindOthers fo = new FindOthers();
+            fo.findOthers();
         }
 
         public  void SaveBinFormat() throws IOException, ClassNotFoundException

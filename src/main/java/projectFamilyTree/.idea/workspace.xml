@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f3031c7b-5c04-4109-9653-56c924d9b2b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/FamilyTree/AddIntoTree/AddPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/FamilyTree/AddIntoTree/AddPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/FamilyTree/FindHuman.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/FamilyTree/FindHuman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/Persons/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/Persons/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/Persons/Others.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/Persons/Others.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/model/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/presenter/Presenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/presenter/Presenter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/view/Starts/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/view/Starts/Console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/view/Starts/Start0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/view/Starts/Start0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/view/tablo/tabloStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../target/classes/projectFamilyTree/view/tablo/tabloStart.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2RNySL52QEvK5Bvn668mwdvFxcC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/JavaProjects/firstProject"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3031c7b-5c04-4109-9653-56c924d9b2b9" name="Changes" comment="" />
+      <created>1687104832088</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687104832088</updated>
+    </task>
+    <servers />
+  </component>
+</project>

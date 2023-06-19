@@ -12,7 +12,7 @@ public class Others extends Person implements Serializable, InterfaceOthers
     {
         super.id = id;
         this.Name = Name;
-        this.Occupation = Occupation;  
+        this.Occupation = Occupation;
     }    
 
     public Others(int id, String Name)
@@ -63,7 +63,8 @@ public class Others extends Person implements Serializable, InterfaceOthers
 
 
     @Override
-    public int compareTo(Person o) {
+    public int compareTo(Person o)
+    {
         return 0;
     }
 }
