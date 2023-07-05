@@ -5,58 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5523130c-2429-455f-9105-d0b4bd5f83a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/.idea/projectFamilyTree.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectFamilyTree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectFamilyTree/model/Persons/Others.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/model/Persons/Others.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectFamilyTree/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/model/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectFamilyTree/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/presenter/Presenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectFamilyTree/view/Starts/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/view/Starts/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectFamilyTree/view/Starts/Start0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/view/Starts/Start0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projectFamilyTree/view/tablo/tabloStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/view/tablo/tabloStart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Comparator/IdComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Comparator/IdComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Comparator/NameComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Comparator/NameComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Comparator/SortById.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Comparator/SortById.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Comparator/SortByLastName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Comparator/SortByLastName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/AddIntoTree/AddPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/AddIntoTree/AddPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/AddIntoTree/FillHuman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/AddIntoTree/FillHuman.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/AddIntoTree/FillOthers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/AddIntoTree/FillOthers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/FamilyTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/FamilyTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/FindHuman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/FamilyTree/FindHuman.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Iterator/HumanIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Iterator/HumanIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Persons/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Persons/Gender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Persons/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Persons/Human.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Persons/Others.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Persons/Others.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Persons/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Persons/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/ReadBin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/ReadBin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/ReadDoc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/ReadDoc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/ReadMd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/ReadMd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/ReadTxt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/ReadTxt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/interfaceRead.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/ReadDoc/interfaceRead.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/InterfaceSave.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/InterfaceSave.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/SaveBinFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/SaveBinFormat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/SaveDocFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/SaveDocFormat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/SaveMdFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/SaveMdFormat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/SaveTextFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/model/fileWork/Format/SaveDoc/SaveTextFormat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/presenter/Presenter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/presenter/Presenter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Console.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/ReadNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/ReadNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Start0.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Start0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Start1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Start1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Start2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Start2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Start3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/Starts/Start3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/tablo/tabloCross.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/tablo/tabloCross.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/tablo/tabloRead.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/tablo/tabloRead.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/tablo/tabloSave.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/tablo/tabloSave.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/tablo/tabloStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/projectFamilyTree/view/tablo/tabloStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectFamilyTree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectFamilyTree/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,19 +38,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaProjects/firstProject&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/JavaProjects/firstProject",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-20" />
@@ -139,7 +89,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
